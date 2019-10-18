@@ -1,7 +1,7 @@
-# Objetivo: este programa lee varios ficheros, línea por línea, dividide las líneas en palabras, calcula el porcentaje de palabras en el texto y muestra una lista.
-# Abrir el fichero y dividirlo en palabras. Aunque este programa lee línea por línea, el fichero sh-procesado.txt tiene una sola línea, con el objetivo de que haya una sola lista (pendiente de mejora). 
-with open("sh-procesado.txt") as fichero:
-    for linea in fichero:
-        palabra = linea.split()
-        print(palabra)
+# Objetivo: este programa lee varios ficheros, dividide las líneas en palabras, calcula el porcentaje de palabras en el texto y muestra una lista.
+# Abrir el fichero, leer todo el contenido y dividir el texto en una lista de palabras.  
+input_file_path = "sh.txt"
+with open(input_file_path) as f:
+    listaPalabras = f.read().split()
+print(listaPalabras)
     
